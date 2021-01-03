@@ -12,4 +12,7 @@ export class Item {
             completed: observable
         })
     }
+     checkItem = (e) => {
+    this.props.store.checkItem(e.target.value)
+  }
 }
